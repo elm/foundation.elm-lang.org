@@ -9,9 +9,17 @@
   <style>
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700');
 body { margin: 0; font-family: 'IBM Plex Sans', sans-serif; color: #000E16; }
-h1, h2 { font-weight: normal; }
-h2 { padding-top: 1em; }
-header { width: 100%; background-color: #1293D8; color: white; height: 200px; display: flex; justify-content: center; align-items: center; }
+h1 { font-weight: normal; }
+h2 { font-weight: normal; padding-top: 1em; }
+header {
+  width: 600px;
+  padding: 0 calc(50% - 300px);
+  background-color: #1293D8;
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
 section { width: 600px; margin-left: auto; margin-right: auto; }
   </style>
 </head>
@@ -19,8 +27,8 @@ section { width: 600px; margin-left: auto; margin-right: auto; }
 <body>
 
 <div class="content">
-  <header class="logo">
-    <img src="assets/elm_logo.svg" style="width: 120px; height: 120px; padding: 40px; display: block;">
+  <header>
+    <img src="assets/elm_logo.svg" style="width: 60px; height: 60px; padding-right: 22px; display: block;">
     <h1 style="display: inline-block; font-size: 40px;">Elm Software Foundation</h1>
   </header>
   
