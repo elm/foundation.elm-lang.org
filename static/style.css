@@ -1,0 +1,109 @@
+
+
+html, head, body {
+  margin: 0;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #000E16;
+  line-height: 1.5;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 1.2em;
+  margin-bottom: 0.8em;
+  font-weight: normal;
+}
+
+a { color: #b40058; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+
+/******** CONTENT ********/
+
+
+.site-content {
+  flex: 1;
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+
+/******** HEADER ********/
+
+
+.site-header {
+  display: flex;
+  width: 800px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.site-header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #000E16;
+  text-decoration: none;
+}
+
+
+.site-header-tabs {
+  display: flex;
+  align-items: center;
+}
+
+.site-header-tabs a {
+  text-decoration: none;
+  color: #000E16;
+  margin-left: 1em;
+  font-size: 16px;
+}
+
+.site-header-tabs a:hover, .site-header-tabs a.current {
+  text-decoration: underline;
+  color: #000E16;
+}
+
+
+
+/******** FOOTER ********/
+
+
+.site-footer {
+  text-align: center;
+  margin-top: 6em;
+  border-top: 1px solid #eeeeee;
+  padding: 2em 0;
+  color: #bbbbbb;
+}
+
+
+.site-footer-link {
+  color: #bbbbbb;
+  text-decoration: underline;
+}
+
+.site-footer-link:hover {
+  color: #bbbbbb;
+}
+
+
+
+/******** RESIZE ********/
+
+
+@media all and (max-width: 832px) {
+  .site-header, .site-content {
+    width: calc(100vw - 32px);
+    padding: 0 16px;
+  }
+}
