@@ -45,10 +45,10 @@ EOF
 
 PATH=$(pwd)/node_modules/.bin:$PATH
 
-if ! [ -x "$(command -v elm)" ]; then
+if ! [ -x "node_modules/.bin/elm" ]; then
   npm install elm@latest-0.19.1
 fi
-if ! [ -x "$(command -v uglifyjs)" ]; then
+if ! [ -x "node_modules/.bin/uglifyjs" ]; then
   npm install uglify-js
 fi
 
